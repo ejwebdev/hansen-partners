@@ -107,8 +107,8 @@ function Footer() {
                 </div>
                 <hr />
                 <div className="footer-bottom">
-                    <p>
-                        Designed & Developed by
+                    <div>
+                        <p>Designed & Developed by</p>
                         <a
                             href="https://ejwebdev.github.io/my-portfolio/"
                             target="_blank"
@@ -116,8 +116,9 @@ function Footer() {
                         >
                             Enrico Jay
                         </a>
-                        |<a href="">Luxury Presence</a>
-                    </p>
+                        <p>|</p>
+                        <a href="">Luxury Presence</a>
+                    </div>
                     <p>
                         &copy; 2024 |<a href="">Privacy Policy</a>
                     </p>

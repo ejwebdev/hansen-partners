@@ -60,9 +60,12 @@
     @apply flex flex-col-reverse gap-y-[30px] items-center;
     @apply lg:flex-row lg:justify-between;
 }
+.footer-bottom > div {
+    @apply flex justify-center flex-wrap gap-x-[5px] text-[#808080];
+}
 .footer-bottom > p {
     @apply flex items-center gap-x-[5px] text-[#808080];
 }
-.footer-bottom > p > a {
+.footer-bottom a {
     @apply hover:text-secText;
 }
