@@ -1,0 +1,22 @@
+.section3 {
+    @apply py-[80px];
+}
+.section3-cntnr {
+    @apply flex flex-col w-priWidth mx-auto gap-y-[10px];
+}
+.section3-cntnr > h2 {
+    @apply text-center;
+}
+.section3-grid {
+    @apply grid grid-cols-2 mt-[40px] gap-x-[30px] gap-y-[50px];
+    @apply md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5;
+}
+.section3-grid > div {
+    @apply relative flex flex-col text-center gap-[20px];
+}
+.section3-grid > div > h3:nth-of-type(1) {
+    @apply bg-priColor size-[55px] text-[2rem] text-secBold rounded-full shadow-lg mx-auto;
+}
+.section3-grid > div > h3:nth-of-type(2) {
+    @apply text-sm sm:text-base max-w-[200px] mx-auto;
+}

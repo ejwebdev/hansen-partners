@@ -1,0 +1,25 @@
+.section8 {
+    @apply bg-secBG py-[80px];
+}
+.section8-cntnr {
+    @apply flex flex-col text-center w-priWidth mx-auto gap-y-[10px];
+}
+.section8-cntnr > h2 {
+    @apply mb-[50px];
+}
+.section8-cntnr > p {
+    @apply w-secWidth mx-auto;
+}
+.section8-grid {
+    @apply grid grid-cols-1 mt-[40px] gap-[50px];
+    @apply md:grid-cols-2 xl:grid-cols-3;
+}
+.section8-grid > div {
+    @apply flex flex-col text-left gap-y-[10px];
+}
+.section8-grid > div > img {
+    @apply w-quaWidth md:w-auto;
+}
+.section8-grid > div > ul li {
+    @apply text-sm list-disc ml-[20px];
+}

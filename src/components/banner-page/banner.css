@@ -1,0 +1,9 @@
+.banner {
+    @apply bg-priBGImg bg-cover bg-center bg-no-repeat flex items-center w-full bg-black bg-opacity-50 bg-blend-darken;
+}
+.banner-cntnr {
+    @apply flex flex-col w-priWidth mx-auto text-center gap-y-[10px] my-[150px];
+}
+.banner-cntnr > h1 {
+    @apply text-secBold;
+}

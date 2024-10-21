@@ -1,0 +1,22 @@
+.section4 {
+    @apply bg-priColor py-[80px];
+}
+.section4-cntnr {
+    @apply flex flex-col w-priWidth mx-auto gap-y-[10px];
+}
+.section4-cntnr > h2 {
+    @apply text-secBold text-center;
+}
+.section4-grid {
+    @apply grid grid-cols-2 mt-[40px] gap-x-[30px] gap-y-[50px];
+    @apply md:grid-cols-3 lg:grid-cols-4;
+}
+.section4-grid > div {
+    @apply relative flex flex-col text-center gap-[20px];
+}
+.section4-grid > div > h3:nth-of-type(1) {
+    @apply bg-secBG size-[55px] text-[2rem] text-priBold rounded-full shadow-lg mx-auto;
+}
+.section4-grid > div > h3:nth-of-type(2) {
+    @apply text-secBold text-sm sm:text-base max-w-[200px] mx-auto;
+}

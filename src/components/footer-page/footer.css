@@ -1,0 +1,68 @@
+.footer {
+    @apply bg-[#111111] pt-[80px] pb-[50px];
+}
+.footer-cntnr {
+    @apply flex flex-col w-priWidth mx-auto gap-y-[30px];
+}
+.footer-top {
+    @apply grid grid-cols-1 gap-x-[5%] gap-y-[50px];
+    @apply lg:grid-cols-2;
+}
+.footer-top h3 {
+    @apply text-secBold;
+}
+.footer-top p {
+    @apply w-quaWidth text-secText;
+}
+.footer-top > div {
+    @apply flex flex-col gap-y-[10px];
+}
+.footer-top > div > p {
+    @apply flex flex-col mb-[20px];
+}
+.footer-top-left > p > a {
+    @apply mr-auto hover:text-[#808080];
+}
+.footer-socials {
+    @apply flex gap-x-[15px];
+}
+.footer-socials > img {
+    @apply size-[22px] transition-transform duration-300 ease-out cursor-pointer hover:scale-[1.15];
+}
+.footer-top-right > form {
+    @apply flex flex-col gap-y-[20px] w-quaWidth;
+}
+.footer-top-right > form > input {
+    @apply w-full bg-[#1e1e1e] border-[#1e1e1e] outline-none border border-solid placeholder:text-[#808080] text-secBold text-sm py-[14px] px-[20px] rounded-[25px] transition-colors duration-200 ease-out focus:border-priColor;
+}
+.footer-top-right > form > div {
+    @apply flex items-start gap-x-[10px];
+}
+.footer-top-right > form > div > input {
+    @apply absolute size-[18px] rounded-[2px];
+}
+.footer-top-right > form > div > label {
+    @apply ml-[30px] text-xs text-[#808080];
+}
+.footer-top-right > form > button {
+    @apply mr-auto;
+}
+.footer-top-right > div {
+    @apply flex gap-x-[30px] mt-[40px] lg:mt-auto;
+}
+.footer-top-right > div > img {
+    @apply size-[50px];
+}
+.footer-cntnr > hr {
+    @apply border-[#1e1e1e];
+}
+.footer-bottom {
+    @apply flex flex-col-reverse gap-y-[30px] items-center;
+    @apply lg:flex-row lg:justify-between;
+}
+.footer-bottom > p {
+    @apply flex items-center gap-x-[5px] text-[#808080];
+}
+.footer-bottom > p > a {
+    @apply hover:text-secText;
+}

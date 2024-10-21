@@ -1,0 +1,34 @@
+.section2 {
+    @apply flex flex-col gap-y-[10px] bg-secBG py-[80px];
+}
+.section2-cntnr {
+    @apply grid grid-cols-1 w-priWidth mx-auto gap-[10px];
+    @apply lg:grid-cols-2;
+}
+.section2-cntnr:nth-of-type(2) > div:nth-child(1) {
+    @apply order-1 lg:order-none;
+}
+.section2-desc:nth-of-type(1) {
+    @apply flex shadow py-[100px] px-[30px] bg-priColor text-secText;
+    @apply lg:py-0;
+}
+.section2-desc:nth-of-type(2) {
+    @apply flex shadow py-[100px] px-[30px] bg-priBG;
+    @apply lg:py-0;
+}
+.section2-desc > div {
+    @apply flex flex-col gap-y-[10px] m-auto;
+}
+.section2-desc:nth-of-type(1) > div h2 {
+    @apply text-secBold;
+}
+.section2-desc > div li {
+    @apply text-sm list-disc ml-[20px];
+}
+.section2-cntnr:nth-of-type(2) > .section2-grid {
+    @apply grid grid-cols-2 gap-[10px];
+}
+.section2-desc,
+.section2-grid > img {
+    @apply w-full rounded-[2px];
+}

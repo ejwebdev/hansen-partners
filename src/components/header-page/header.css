@@ -1,0 +1,67 @@
+.header {
+    @apply flex flex-col justify-center items-center sticky top-0 left-0 right-0 z-50 bg-priBG shadow;
+    @apply lg:bg-priColor lg:shadow-none;
+}
+.header-top {
+    @apply hidden w-full bg-priBG;
+    @apply lg:block;
+}
+.nav-top {
+    @apply flex justify-between items-center w-priWidth h-[70px] mx-auto;
+}
+.nav-top > div {
+    @apply relative flex items-center;
+}
+.nav-top > div > span {
+    @apply absolute left-[12px] text-[#808080];
+}
+.nav-top > div > input {
+    @apply w-[200px] bg-transparent border-[#e1e2e7] outline-none border border-solid placeholder:text-[#808080] text-priBold text-sm py-[10px] pl-[40px] pr-[10px] rounded-[25px] transition-colors duration-200 ease-out focus:border-priColor;
+}
+.nav-top > img {
+    @apply h-[24px] cursor-pointer;
+}
+.nav-top > button {
+    @apply bg-transparent text-priBold py-[10px] px-[25px] border-[#111111] hover:text-secBold hover:bg-priColor hover:border-[#111111];
+}
+.nav {
+    @apply flex justify-between items-center h-[70px] w-priWidth;
+    @apply lg:h-[50px];
+}
+.nav > img {
+    @apply block h-[24px] cursor-pointer;
+    @apply lg:hidden;
+}
+.nav > ul {
+    @apply absolute flex flex-col w-full top-[70px] gap-y-[30px] py-[30px] bg-[#111111] transition-all duration-300 ease-out;
+    @apply lg:static lg:flex-row lg:w-auto lg:h-full lg:top-auto lg:gap-x-[50px] lg:py-0 lg:bg-inherit lg:left-auto lg:mx-auto;
+}
+.nav > ul > li {
+    @apply relative w-priWidth mx-auto;
+    @apply lg:w-auto lg:flex lg:h-full;
+}
+.nav > ul > li > button {
+    @apply block bg-priBG text-priBold py-[10px] hover:bg-white hover:text-priBold;
+    @apply lg:hidden;
+}
+.nav-top > a > p {
+    @apply hover:text-secBold;
+}
+.nav > ul > li a {
+    @apply flex items-center gap-x-[5px] text-secText hover:text-secBold;
+}
+.nav > ul > li a > span {
+    @apply text-secBold;
+}
+.nav .dropdown {
+    @apply hidden relative bg-[#111111] flex-col left-0 mt-[30px] gap-y-[30px];
+    @apply lg:absolute lg:mt-0 lg:top-[50px] lg:gap-y-[20px] lg:w-[220px] lg:p-[20px] lg:border-t lg:border-t-[#3c3c3c] lg:shadow;
+}
+.nav > ul > li:hover > .dropdown,
+.nav .dropdown.open {
+    @apply flex;
+}
+.nav > span {
+    @apply text-[30px] text-priBold;
+    @apply lg:hidden;
+}

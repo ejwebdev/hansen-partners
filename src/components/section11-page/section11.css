@@ -1,0 +1,20 @@
+.section11 {
+    @apply bg-secBG py-[80px];
+}
+.section11-cntnr {
+    @apply flex flex-col w-secWidth mx-auto gap-y-[10px];
+}
+.section11-grid {
+    @apply grid grid-cols-1 mt-[40px] gap-x-[30px] gap-y-[25px];
+    @apply md:grid-cols-2;
+}
+.section11-grid > div {
+    @apply flex flex-col text-center gap-y-[10px] p-[30px] w-quaWidth mx-auto rounded-[2px] border border-solid border-[#111111];
+    @apply md:w-auto md:mx-0;
+}
+.section11-grid > div > span {
+    @apply text-priBold text-[50px] mb-[10px];
+}
+.section11-grid > div > p {
+    @apply line-clamp-4;
+}

@@ -1,0 +1,23 @@
+.section7 {
+    @apply py-[80px];
+}
+.section7-cntnr {
+    @apply flex flex-col gap-y-[50px] w-priWidth mx-auto;
+    @apply xl:flex-row xl:justify-between xl:items-center;
+}
+.section7-left {
+    @apply flex flex-col gap-y-[10px];
+    @apply xl:w-[47.5%];
+}
+.section7-left > p:nth-of-type(1),
+.section7-left > ul {
+    @apply mb-[10px];
+}
+.section7-left > ul li {
+    @apply text-sm list-disc ml-[20px];
+}
+
+.section7-cntnr > img {
+    @apply w-terWidth h-auto mx-auto;
+    @apply xl:mx-0 xl:w-[47.5%];
+}
